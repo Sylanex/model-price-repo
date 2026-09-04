@@ -201,10 +201,14 @@ def apply_aliases(data: dict, aliases: dict) -> dict:
     return data
 
 
-def apply_custom_models(data: dict, custom: dict) -> dict:
-    """Inject custom model definitions (deep merge for existing, full set for new)."""
+def apply_custom_models(data: dict, custom: dict, replace_keys=None) -> dict:
+    """Inject custom models, replacing entries that must not inherit upstream fields."""
+    replace = set(replace_keys or [])
     for key, value in custom.items():
-        if key in data and isinstance(data[key], dict) and isinstance(value, dict):
+        if key in replace:
+            data[key] = copy.deepcopy(value)
+            log.info("Custom model '%s' replaced exactly.", key)
+        elif key in data and isinstance(data[key], dict) and isinstance(value, dict):
             data[key].update(value)
             log.info("Custom model '%s' merged (deep).", key)
         else:
@@ -334,7 +338,11 @@ def main() -> None:
     # 8. Custom models
     custom = config.get("custom_models", {})
     if custom:
-        merged = apply_custom_models(merged, custom)
+        merged = apply_custom_models(
+            merged,
+            custom,
+            config.get("replace_custom_models", []),
+        )
 
     # 9. Write output
     changed, new_hash = write_output(merged, output_path, hash_path, old_hash)
