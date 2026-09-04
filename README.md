@@ -27,6 +27,7 @@ All settings live in [`config.json`](config.json):
 | `exclude_patterns` | Substring patterns to exclude (applied before prefix matching) |
 | `aliases` | Map alias model keys to existing source models (deep copy pricing) |
 | `custom_models` | Manually defined pricing objects, always injected |
+| `replace_custom_models` | Custom model keys that replace an existing entry instead of merging with it |
 
 ### Adding new model prefixes
 
