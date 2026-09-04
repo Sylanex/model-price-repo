@@ -201,6 +201,17 @@ def apply_aliases(data: dict, aliases: dict) -> dict:
     return data
 
 
+def refresh_existing_models(data: dict, upstream: dict, model_keys: list) -> dict:
+    """Replace selected existing entries with the current filtered upstream data."""
+    for key in model_keys:
+        if key not in upstream:
+            log.warning("Refresh model '%s': upstream entry not found; keeping existing data.", key)
+            continue
+        data[key] = copy.deepcopy(upstream[key])
+        log.info("Refresh model '%s': replaced from upstream.", key)
+    return data
+
+
 def apply_custom_models(data: dict, custom: dict, replace_keys=None) -> dict:
     """Inject custom models, replacing entries that must not inherit upstream fields."""
     replace = set(replace_keys or [])
@@ -327,15 +338,20 @@ def main() -> None:
         stats["unchanged"],
     )
 
-    # 6. Aliases
+    # 6. Refresh selected existing models
+    refresh_keys = config.get("refresh_existing_models", [])
+    if refresh_keys:
+        merged = refresh_existing_models(merged, filtered, refresh_keys)
+
+    # 7. Aliases
     aliases = config.get("aliases", {})
     if aliases:
         merged = apply_aliases(merged, aliases)
 
-    # 7. Auto-fill cache 1hr pricing
+    # 8. Auto-fill cache 1hr pricing
     cache_1hr_count = fill_cache_1hr_pricing(merged, config)
 
-    # 8. Custom models
+    # 9. Custom models
     custom = config.get("custom_models", {})
     if custom:
         merged = apply_custom_models(
@@ -344,16 +360,17 @@ def main() -> None:
             config.get("replace_custom_models", []),
         )
 
-    # 9. Write output
+    # 10. Write output
     changed, new_hash = write_output(merged, output_path, hash_path, old_hash)
 
-    # 10. Report
+    # 11. Report
     log.info("--- Sync Report ---")
     log.info("Total models in output: %d", len(merged))
     log.info("Added:     %d", stats["added"])
     log.info("Updated:   %d", stats["updated"])
     log.info("Unchanged: %d", stats["unchanged"])
     log.info("Aliases:   %d", len(aliases))
+    log.info("Refreshed: %d", len(refresh_keys))
     log.info("Cache 1hr auto-filled: %d", cache_1hr_count)
     log.info("Custom:    %d", len(custom))
 
