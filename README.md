@@ -23,6 +23,7 @@ All settings live in [`config.json`](config.json):
 | `hash_file` | SHA-256 hash filename for change detection |
 | `sync_mode` | `"additive"` (only add new) or `"full"` (replace each run) |
 | `update_existing` | Whether to update pricing data for models already in the output |
+| `refresh_existing_models` | Existing model keys that should be replaced from current upstream data on every sync |
 | `prefix_filters` | List of prefixes — a model key must start with one to be included |
 | `exclude_patterns` | Substring patterns to exclude (applied before prefix matching) |
 | `aliases` | Map alias model keys to existing source models (deep copy pricing) |
