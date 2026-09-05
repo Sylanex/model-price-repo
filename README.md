@@ -22,13 +22,25 @@ All settings live in [`config.json`](config.json):
 | `output_file` | Output filename (default: `model_prices_and_context_window.json`) |
 | `hash_file` | SHA-256 hash filename for change detection |
 | `sync_mode` | `"additive"` (only add new) or `"full"` (replace each run) |
-| `update_existing` | Whether to update pricing data for models already in the output |
+| `update_existing` | In additive mode, `false` freezes existing models' complete pricing field set, including absent rates and `long_context_*` tiers; only new metadata fields are absorbed. `true` replaces existing entries from upstream. |
 | `refresh_existing_models` | Existing model keys that should be replaced from current upstream data on every sync |
 | `prefix_filters` | List of prefixes — a model key must start with one to be included |
 | `exclude_patterns` | Substring patterns to exclude (applied before prefix matching) |
 | `aliases` | Map alias model keys to existing source models (deep copy pricing) |
 | `custom_models` | Manually defined pricing objects, always injected |
 | `replace_custom_models` | Custom model keys that replace an existing entry instead of merging with it |
+
+With `sync_mode: "additive"` and `update_existing: false`, a missing price is
+also preserved as missing. For example, adding an upstream Priority rate or a
+long-context threshold must not silently change an existing model's billing.
+Fields containing `cost`, `price`, or `pricing`, and fields starting with
+`long_context_`, are frozen along with existing values (including zero).
+Existing metadata values are preserved; newly introduced metadata can be added.
+New models are still imported with all their pricing fields.
+
+Use `refresh_existing_models` to opt selected existing models into full upstream
+refreshes, including price changes and removal of obsolete fields. Aliases and
+`custom_models` are applied afterwards as explicit configuration overrides.
 
 ### Adding new model prefixes
 
@@ -68,6 +80,12 @@ python3 scripts/sync_prices.py --config config.json --repo-root .
 ```
 
 No pip dependencies — uses Python standard library only.
+
+Run the regression tests without network access:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
 
 ## CRS integration
 

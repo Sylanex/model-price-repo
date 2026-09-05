@@ -135,6 +135,22 @@ def filter_upstream(data: dict, config: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 
+def is_pricing_field(name: str) -> bool:
+    """Identify rates and billing tiers that must stay frozen with a price card.
+
+    A newly added priority/cache/image rate can change effective billing even
+    when existing rates are preserved. Keep this deliberately conservative so
+    future pricing field names do not bypass update_existing=False.
+    """
+    normalized = name.lower()
+    return (
+        "cost" in normalized
+        or "price" in normalized
+        or "pricing" in normalized
+        or normalized.startswith("long_context_")
+    )
+
+
 def merge_models(
     existing: dict,
     filtered: dict,
@@ -165,12 +181,18 @@ def merge_models(
             else:
                 stats["unchanged"] += 1
         else:
-            # update_existing=False: preserve existing fields, but absorb new fields from upstream
+            # Freeze the entire pricing field set, including absent rates and
+            # long-context tiers. Only newly introduced metadata is absorbed.
+            # Explicit refresh_existing_models is applied after this merge.
             if isinstance(merged[key], dict) and isinstance(value, dict):
-                new_fields = {k: v for k, v in value.items() if k not in merged[key]}
+                new_fields = {
+                    k: v
+                    for k, v in value.items()
+                    if k not in merged[key] and not is_pricing_field(k)
+                }
                 if new_fields:
-                    merged[key].update(new_fields)
-                    log.info("Model '%s': absorbed %d new field(s) from upstream: %s", key, len(new_fields), list(new_fields))
+                    merged[key] = {**merged[key], **new_fields}
+                    log.info("Model '%s': absorbed %d new metadata field(s) from upstream: %s", key, len(new_fields), list(new_fields))
                     stats["updated"] += 1
                 else:
                     stats["unchanged"] += 1
