@@ -888,6 +888,7 @@
       "search_context_size_low": 0.01,
       "search_context_size_medium": 0.01
     },
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
     "supports_assistant_prefill": true,
     "supports_computer_use": true,
     "supports_function_calling": true,
@@ -1694,7 +1695,11 @@
       "audio"
     ],
     "supports_audio_input": true,
-    "supports_audio_output": true
+    "supports_audio_output": true,
+    "supports_function_calling": true,
+    "supports_response_schema": false,
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "gemini-2.5-flash-preview-09-2025": {
     "cache_read_input_token_cost": 7.5e-08,
@@ -1744,12 +1749,19 @@
   "gemini-2.5-flash-preview-tts": {
     "input_cost_per_token": 3e-07,
     "litellm_provider": "gemini",
+    "max_input_tokens": 8192,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
     "mode": "audio_speech",
     "output_cost_per_token": 2.5e-06,
     "source": "https://ai.google.dev/pricing",
     "supported_endpoints": [
       "/v1/audio/speech"
-    ]
+    ],
+    "supports_audio_input": false,
+    "supports_function_calling": false,
+    "supports_response_schema": false,
+    "supports_web_search": false
   },
   "gemini-2.5-pro": {
     "cache_creation_input_token_cost_above_200k_tokens": 2.5e-07,
@@ -2317,6 +2329,7 @@
     "supports_audio_input": true,
     "supports_audio_output": true,
     "supports_function_calling": true,
+    "supports_response_schema": false,
     "supports_vision": true,
     "supports_web_search": true
   },
@@ -2826,6 +2839,73 @@
     "supports_web_search": true,
     "web_search_billing_unit": "per_query"
   },
+  "gemini-3.8-live": {
+    "gemini_audio_only_live": true,
+    "input_cost_per_audio_token": 3e-06,
+    "input_cost_per_image_token": 1e-06,
+    "input_cost_per_token": 7.5e-07,
+    "input_cost_per_video_per_second": 3.3333333333333335e-05,
+    "litellm_provider": "gemini",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
+    "mode": "realtime",
+    "output_cost_per_audio_token": 1.2e-05,
+    "output_cost_per_token": 4.5e-06,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "supported_endpoints": [
+      "/v1/realtime"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "audio"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": true,
+    "supports_function_calling": true,
+    "supports_vision": true,
+    "supports_web_search": true
+  },
+  "gemini-3.8-live-extended-thinking": {
+    "gemini_audio_only_live": true,
+    "input_cost_per_audio_token": 3e-06,
+    "input_cost_per_image_token": 1e-06,
+    "input_cost_per_token": 7.5e-07,
+    "input_cost_per_video_per_second": 3.3333333333333335e-05,
+    "litellm_provider": "gemini",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
+    "mode": "realtime",
+    "output_cost_per_audio_token": 1.2e-05,
+    "output_cost_per_token": 4.5e-06,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "supported_endpoints": [
+      "/v1/realtime"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "audio"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": true,
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_vision": true,
+    "supports_web_search": true
+  },
   "gemini-embedding-001": {
     "deprecation_date": "2028-05-20",
     "input_cost_per_token": 1.5e-07,
@@ -2936,6 +3016,7 @@
     "mode": "chat",
     "output_cost_per_reasoning_token": 2.5e-06,
     "output_cost_per_token": 2.5e-06,
+    "prompt_cache_min_tokens": 4096,
     "rpm": 100000,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.035,
@@ -2957,8 +3038,10 @@
     "supported_output_modalities": [
       "text"
     ],
+    "supports_audio_input": true,
     "supports_audio_output": false,
     "supports_function_calling": true,
+    "supports_native_streaming": true,
     "supports_parallel_function_calling": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
@@ -2967,9 +3050,11 @@
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_url_context": true,
+    "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
-    "tpm": 8000000
+    "tpm": 8000000,
+    "web_search_billing_unit": "per_query"
   },
   "gemini-flash-lite-latest": {
     "cache_read_input_token_cost": 1e-08,
@@ -3003,8 +3088,10 @@
     "supported_output_modalities": [
       "text"
     ],
+    "supports_audio_input": true,
     "supports_audio_output": false,
     "supports_function_calling": true,
+    "supports_native_streaming": true,
     "supports_parallel_function_calling": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
@@ -3013,9 +3100,11 @@
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_url_context": true,
+    "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
-    "tpm": 250000
+    "tpm": 250000,
+    "web_search_billing_unit": "per_query"
   },
   "gemini-live-2.5-flash-native-audio": {
     "deprecation_date": "2026-12-13",
@@ -3149,6 +3238,7 @@
     "mode": "chat",
     "output_cost_per_token": 1e-05,
     "output_cost_per_token_above_200k_tokens": 1.5e-05,
+    "prompt_cache_min_tokens": 4096,
     "rpm": 2000,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.035,
@@ -3171,16 +3261,19 @@
     ],
     "supports_audio_input": true,
     "supports_function_calling": true,
+    "supports_native_streaming": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_url_context": true,
     "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
-    "tpm": 800000
+    "tpm": 800000,
+    "web_search_billing_unit": "per_query"
   },
   "gemini-robotics-er-1.5-preview": {
     "cache_read_input_token_cost": 0,
