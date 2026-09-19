@@ -1777,6 +1777,7 @@
     "mode": "chat",
     "output_cost_per_token": 1e-05,
     "output_cost_per_token_above_200k_tokens": 1.5e-05,
+    "prompt_cache_min_tokens": 2048,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.035,
       "search_context_size_low": 0.035,
