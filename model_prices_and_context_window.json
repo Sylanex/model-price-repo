@@ -346,6 +346,7 @@
     "cache_creation_input_token_cost": 1.25e-05,
     "cache_creation_input_token_cost_above_1hr": 2e-05,
     "cache_read_input_token_cost": 1e-06,
+    "deprecation_date": "2026-06-09",
     "input_cost_per_token": 1e-05,
     "litellm_provider": "anthropic",
     "max_input_tokens": 1000000,
@@ -4465,6 +4466,7 @@
   },
   "gpt-5-chat": {
     "cache_read_input_token_cost": 1.25e-07,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 128000,
@@ -4508,6 +4510,7 @@
     "max_tokens": 16384,
     "mode": "chat",
     "output_cost_per_token": 1e-05,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5-chat-latest",
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/batch",
@@ -4544,6 +4547,7 @@
     "max_tokens": 128000,
     "mode": "responses",
     "output_cost_per_token": 1e-05,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5-codex",
     "supported_endpoints": [
       "/v1/responses"
     ],
@@ -4954,6 +4958,7 @@
     "mode": "chat",
     "output_cost_per_token": 1e-05,
     "output_cost_per_token_priority": 2e-05,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.1-chat-latest",
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/responses"
@@ -4994,6 +4999,7 @@
     "mode": "responses",
     "output_cost_per_token": 1e-05,
     "output_cost_per_token_priority": 2e-05,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.1-codex",
     "supported_endpoints": [
       "/v1/responses"
     ],
@@ -5029,6 +5035,7 @@
     "max_tokens": 128000,
     "mode": "responses",
     "output_cost_per_token": 1e-05,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.1-codex-max",
     "supported_endpoints": [
       "/v1/responses"
     ],
@@ -5067,6 +5074,7 @@
     "mode": "responses",
     "output_cost_per_token": 2e-06,
     "output_cost_per_token_priority": 3.6e-06,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.1-codex-mini",
     "supported_endpoints": [
       "/v1/responses"
     ],
@@ -5189,6 +5197,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.4e-05,
     "output_cost_per_token_priority": 2.8e-05,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.2-chat-latest",
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/responses"
@@ -5228,6 +5237,7 @@
     "mode": "responses",
     "output_cost_per_token": 1.4e-05,
     "output_cost_per_token_priority": 2.8e-05,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.2-codex",
     "supported_endpoints": [
       "/v1/responses"
     ],
@@ -5336,6 +5346,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.4e-05,
     "output_cost_per_token_priority": 2.8e-05,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.3-chat-latest",
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/responses"
@@ -7665,6 +7676,7 @@
     "mode": "responses",
     "output_cost_per_token": 4e-05,
     "output_cost_per_token_batches": 2e-05,
+    "source": "https://developers.openai.com/api/docs/models/o3-deep-research",
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/batch",
@@ -7888,6 +7900,7 @@
     "mode": "responses",
     "output_cost_per_token": 8e-06,
     "output_cost_per_token_batches": 4e-06,
+    "source": "https://developers.openai.com/api/docs/models/o4-mini-deep-research",
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/batch",
