@@ -4791,6 +4791,13 @@
     "output_cost_per_token": 1e-05,
     "output_cost_per_token_flex": 5e-06,
     "output_cost_per_token_priority": 2e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -4835,6 +4842,13 @@
     "output_cost_per_token": 1e-05,
     "output_cost_per_token_flex": 5e-06,
     "output_cost_per_token_priority": 2e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -4988,6 +5002,13 @@
     "output_cost_per_token": 2e-06,
     "output_cost_per_token_flex": 1e-06,
     "output_cost_per_token_priority": 3.6e-06,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -5032,6 +5053,13 @@
     "output_cost_per_token": 2e-06,
     "output_cost_per_token_flex": 1e-06,
     "output_cost_per_token_priority": 3.6e-06,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -5074,6 +5102,13 @@
     "mode": "chat",
     "output_cost_per_token": 4e-07,
     "output_cost_per_token_flex": 2e-07,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -5115,6 +5150,13 @@
     "mode": "chat",
     "output_cost_per_token": 4e-07,
     "output_cost_per_token_flex": 2e-07,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -5154,6 +5196,13 @@
     "mode": "responses",
     "output_cost_per_token": 0.00012,
     "output_cost_per_token_batches": 6e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/batch",
@@ -5192,6 +5241,13 @@
     "mode": "responses",
     "output_cost_per_token": 0.00012,
     "output_cost_per_token_batches": 6e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/batch",
@@ -5278,6 +5334,13 @@
     "mode": "chat",
     "output_cost_per_token": 1e-05,
     "output_cost_per_token_priority": 2e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -5320,6 +5383,13 @@
     "mode": "chat",
     "output_cost_per_token": 1e-05,
     "output_cost_per_token_priority": 2e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -5517,6 +5587,13 @@
     "mode": "chat",
     "output_cost_per_token": 1.4e-05,
     "output_cost_per_token_priority": 2.8e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -5560,6 +5637,13 @@
     "mode": "chat",
     "output_cost_per_token": 1.4e-05,
     "output_cost_per_token_priority": 2.8e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -5677,6 +5761,13 @@
     "max_tokens": 128000,
     "mode": "responses",
     "output_cost_per_token": 0.000168,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/batch",
@@ -5712,6 +5803,13 @@
     "max_tokens": 128000,
     "mode": "responses",
     "output_cost_per_token": 0.000168,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/batch",
@@ -5792,6 +5890,13 @@
     "mode": "responses",
     "output_cost_per_token": 1.4e-05,
     "output_cost_per_token_priority": 2.8e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/responses"
@@ -5832,6 +5937,13 @@
     "mode": "responses",
     "output_cost_per_token": 1.4e-05,
     "output_cost_per_token_priority": 2.8e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/responses"
@@ -5880,6 +5992,14 @@
     "output_cost_per_token_batches": 7.5e-06,
     "output_cost_per_token_flex": 7.5e-06,
     "output_cost_per_token_priority": 3e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -5931,6 +6051,14 @@
     "output_cost_per_token_batches": 7.5e-06,
     "output_cost_per_token_flex": 7.5e-06,
     "output_cost_per_token_priority": 3e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -5979,6 +6107,14 @@
     "output_cost_per_token_batches": 2.25e-06,
     "output_cost_per_token_flex": 2.25e-06,
     "output_cost_per_token_priority": 9e-06,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6029,6 +6165,14 @@
     "output_cost_per_token_batches": 2.25e-06,
     "output_cost_per_token_flex": 2.25e-06,
     "output_cost_per_token_priority": 9e-06,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6076,6 +6220,14 @@
     "output_cost_per_token": 1.25e-06,
     "output_cost_per_token_batches": 6.25e-07,
     "output_cost_per_token_flex": 6.25e-07,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6122,6 +6274,14 @@
     "output_cost_per_token": 1.25e-06,
     "output_cost_per_token_batches": 6.25e-07,
     "output_cost_per_token_flex": 6.25e-07,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6168,6 +6328,14 @@
     "output_cost_per_token_above_272k_tokens": 0.00027,
     "output_cost_per_token_batches": 9e-05,
     "output_cost_per_token_flex": 9e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6214,6 +6382,14 @@
     "output_cost_per_token_above_272k_tokens": 0.00027,
     "output_cost_per_token_batches": 9e-05,
     "output_cost_per_token_flex": 9e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6264,6 +6440,14 @@
     "output_cost_per_token_batches": 1.5e-05,
     "output_cost_per_token_flex": 1.5e-05,
     "output_cost_per_token_priority": 6e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6315,6 +6499,14 @@
     "output_cost_per_token_batches": 1.5e-05,
     "output_cost_per_token_flex": 1.5e-05,
     "output_cost_per_token_priority": 6e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6380,6 +6572,14 @@
     "output_cost_per_token_above_272k_tokens": 0.00027,
     "output_cost_per_token_batches": 9e-05,
     "output_cost_per_token_flex": 9e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6427,6 +6627,14 @@
     "output_cost_per_token_above_272k_tokens": 0.00027,
     "output_cost_per_token_batches": 9e-05,
     "output_cost_per_token_flex": 9e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "source": "https://developers.openai.com/api/docs/pricing",
@@ -6482,6 +6690,15 @@
     "output_cost_per_token_batches": 1.5e-05,
     "output_cost_per_token_flex": 1.5e-05,
     "output_cost_per_token_priority": 6e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard",
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "supported_endpoints": [
@@ -6597,6 +6814,15 @@
     "output_cost_per_token_batches": 6e-07,
     "output_cost_per_token_flex": 6e-07,
     "output_cost_per_token_priority": 2.4e-06,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard",
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "search_context_cost_per_query": {
@@ -6679,6 +6905,15 @@
     "output_cost_per_token_batches": 1e-05,
     "output_cost_per_token_flex": 1e-05,
     "output_cost_per_token_priority": 4e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard",
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "search_context_cost_per_query": {
@@ -6762,6 +6997,15 @@
     "output_cost_per_token_batches": 6e-06,
     "output_cost_per_token_flex": 6e-06,
     "output_cost_per_token_priority": 2.4e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard",
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "search_context_cost_per_query": {
@@ -6854,6 +7098,15 @@
     "output_cost_per_token_flex": 2.5e-05,
     "output_cost_per_token_priority": 0.0001,
     "output_cost_per_token_ultrafast": 0.0003,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard",
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "search_context_cost_per_query": {
@@ -6931,6 +7184,15 @@
     "output_cost_per_token_batches": 2.5e-07,
     "output_cost_per_token_flex": 2.5e-07,
     "output_cost_per_token_priority": 1e-06,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard",
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "search_context_cost_per_query": {
@@ -7008,6 +7270,15 @@
     "output_cost_per_token_batches": 5e-06,
     "output_cost_per_token_flex": 5e-06,
     "output_cost_per_token_priority": 2e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard",
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "search_context_cost_per_query": {
@@ -7085,6 +7356,15 @@
     "output_cost_per_token_batches": 5e-06,
     "output_cost_per_token_flex": 5e-06,
     "output_cost_per_token_priority": 2e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard",
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "search_context_cost_per_query": {
@@ -7170,6 +7450,15 @@
     "output_cost_per_token_batches": 2.5e-06,
     "output_cost_per_token_flex": 2.5e-06,
     "output_cost_per_token_priority": 1e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn",
+      "all_turns"
+    ],
+    "reasoning_modes": [
+      "standard",
+      "pro"
+    ],
     "regional_processing_uplift_multiplier_eu": 1.1,
     "regional_processing_uplift_multiplier_us": 1.1,
     "search_context_cost_per_query": {
@@ -8254,6 +8543,13 @@
     "output_cost_per_token": 8e-06,
     "output_cost_per_token_flex": 4e-06,
     "output_cost_per_token_priority": 1.4e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/responses",
@@ -8288,6 +8584,13 @@
     "max_tokens": 100000,
     "mode": "chat",
     "output_cost_per_token": 8e-06,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "standard"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/responses",
@@ -8435,6 +8738,13 @@
     "mode": "responses",
     "output_cost_per_token": 8e-05,
     "output_cost_per_token_batches": 4e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/responses",
@@ -8468,6 +8778,13 @@
     "mode": "responses",
     "output_cost_per_token": 8e-05,
     "output_cost_per_token_batches": 4e-05,
+    "reasoning_contexts": [
+      "auto",
+      "current_turn"
+    ],
+    "reasoning_modes": [
+      "pro"
+    ],
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/responses",
