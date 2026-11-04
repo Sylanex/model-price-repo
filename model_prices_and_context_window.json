@@ -405,6 +405,7 @@
     "cache_creation_input_token_cost_above_1hr": 2e-05,
     "cache_read_input_token_cost": 1e-06,
     "deprecation_date": "2026-06-09",
+    "deprecation_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
     "input_cost_per_token": 1e-05,
     "litellm_provider": "anthropic",
     "max_input_tokens": 1000000,
@@ -968,6 +969,7 @@
     "cache_read_input_token_cost": 3e-07,
     "cache_read_input_token_cost_above_200k_tokens": 6e-07,
     "deprecation_date": "2026-09-29",
+    "deprecation_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
     "input_cost_per_token": 3e-06,
     "input_cost_per_token_above_200k_tokens": 6e-06,
     "litellm_provider": "anthropic",
@@ -1004,6 +1006,7 @@
     "cache_read_input_token_cost": 3e-07,
     "cache_read_input_token_cost_above_200k_tokens": 6e-07,
     "deprecation_date": "2026-09-29",
+    "deprecation_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
     "input_cost_per_token": 3e-06,
     "input_cost_per_token_above_200k_tokens": 6e-06,
     "litellm_provider": "anthropic",
@@ -1041,6 +1044,7 @@
     "cache_read_input_token_cost": 3e-07,
     "cache_read_input_token_cost_above_200k_tokens": 6e-07,
     "deprecation_date": "2027-04-08",
+    "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4-5.md",
     "input_cost_per_token": 3e-06,
     "input_cost_per_token_above_200k_tokens": 6e-06,
     "litellm_provider": "bedrock",
@@ -1062,7 +1066,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "claude-sonnet-4-6": {
     "cache_creation_input_token_cost": 3.75e-06,
@@ -1232,6 +1240,7 @@
   "deepseek-chat": {
     "cache_read_input_token_cost": 2.8e-08,
     "deprecation_date": "2026-07-24",
+    "deprecation_source": "https://api-docs.deepseek.com/updates",
     "input_cost_per_token": 2.8e-07,
     "litellm_provider": "deepseek",
     "max_input_tokens": 131072,
@@ -1280,6 +1289,7 @@
   "deepseek-reasoner": {
     "cache_read_input_token_cost": 2.8e-08,
     "deprecation_date": "2026-07-24",
+    "deprecation_source": "https://api-docs.deepseek.com/updates",
     "input_cost_per_token": 2.8e-07,
     "litellm_provider": "deepseek",
     "max_input_tokens": 131072,
@@ -1586,6 +1596,7 @@
   "gemini-2.5-flash": {
     "cache_read_input_token_cost": 3e-08,
     "deprecation_date": "2026-10-20",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_audio_token": 1e-06,
     "input_cost_per_token": 3e-07,
     "litellm_provider": "vertex_ai-language-models",
@@ -1638,6 +1649,7 @@
   "gemini-2.5-flash-image": {
     "cache_read_input_token_cost": 3e-08,
     "deprecation_date": "2026-10-02",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_audio_token": 1e-06,
     "input_cost_per_token": 3e-07,
     "litellm_provider": "vertex_ai-language-models",
@@ -1684,6 +1696,7 @@
   "gemini-2.5-flash-lite": {
     "cache_read_input_token_cost": 1e-08,
     "deprecation_date": "2026-10-20",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_audio_token": 3e-07,
     "input_cost_per_token": 1e-07,
     "litellm_provider": "vertex_ai-language-models",
@@ -1881,6 +1894,7 @@
   },
   "gemini-2.5-flash-native-audio-preview-12-2025": {
     "deprecation_date": "2026-11-17",
+    "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
     "gemini_native_audio": true,
     "input_cost_per_audio_token": 1e-06,
     "input_cost_per_token": 3e-07,
@@ -1962,6 +1976,7 @@
   },
   "gemini-2.5-flash-preview-tts": {
     "deprecation_date": "2026-11-17",
+    "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
     "input_cost_per_token": 3e-07,
     "litellm_provider": "gemini",
     "max_input_tokens": 8192,
@@ -1984,6 +1999,7 @@
     "cache_read_input_token_cost": 1.25e-07,
     "cache_read_input_token_cost_above_200k_tokens": 2.5e-07,
     "deprecation_date": "2026-10-20",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_above_200k_tokens": 2.5e-06,
     "litellm_provider": "vertex_ai-language-models",
@@ -2180,6 +2196,7 @@
   },
   "gemini-3-pro-image": {
     "deprecation_date": "2027-05-28",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_image": 0.0011,
     "input_cost_per_token": 2e-06,
     "input_cost_per_token_batches": 1e-06,
@@ -2416,6 +2433,7 @@
     "cache_read_input_token_cost_flex": 1.25e-08,
     "cache_read_input_token_cost_priority": 4.5e-08,
     "deprecation_date": "2027-05-07",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_audio_token": 5e-07,
     "input_cost_per_token": 2.5e-07,
     "input_cost_per_token_batches": 1.25e-07,
@@ -2568,6 +2586,7 @@
   },
   "gemini-3.1-flash-live-preview": {
     "deprecation_date": "2026-11-17",
+    "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
     "gemini_audio_only_live": true,
     "input_cost_per_audio_token": 3e-06,
     "input_cost_per_image_token": 1e-06,
@@ -2852,6 +2871,7 @@
     "cache_read_input_token_cost": 1.5e-07,
     "cache_read_input_token_cost_priority": 2.7e-07,
     "deprecation_date": "2027-05-19",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_audio_token": 1e-06,
     "input_cost_per_audio_token_priority": 1.8e-06,
     "input_cost_per_token": 1.5e-06,
@@ -2914,6 +2934,7 @@
     "cache_read_input_token_cost_flex": 2e-08,
     "cache_read_input_token_cost_priority": 5e-08,
     "deprecation_date": "2027-07-21",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_token": 3e-07,
     "input_cost_per_token_batches": 1.5e-07,
     "input_cost_per_token_flex": 1.5e-07,
@@ -2977,6 +2998,7 @@
     "cache_read_input_token_cost_flex": 7.5e-08,
     "cache_read_input_token_cost_priority": 2.7e-07,
     "deprecation_date": "2026-11-19",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_token": 1.5e-06,
     "input_cost_per_token_batches": 7.5e-07,
     "input_cost_per_token_flex": 7.5e-07,
@@ -3042,6 +3064,7 @@
     "cache_read_input_token_cost_flex": 3.75e-08,
     "cache_read_input_token_cost_priority": 1.35e-07,
     "deprecation_date": "2027-01-28",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_token": 7.5e-07,
     "input_cost_per_token_batches": 3.75e-07,
@@ -3288,6 +3311,7 @@
   },
   "gemini-embedding-001": {
     "deprecation_date": "2028-05-20",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_token": 1.5e-07,
     "litellm_provider": "vertex_ai-embedding-models",
     "max_input_tokens": 2048,
@@ -3310,6 +3334,7 @@
     "output_cost_per_token": 0,
     "output_vector_size": 3072,
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+    "supports_embedding_image_input": true,
     "supports_multimodal": true,
     "uses_embed_content": true
   },
@@ -3325,6 +3350,7 @@
     "output_cost_per_token": 0,
     "output_vector_size": 3072,
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+    "supports_embedding_image_input": true,
     "uses_embed_content": true
   },
   "gemini-exp-1206": {
@@ -3489,6 +3515,7 @@
   },
   "gemini-live-2.5-flash-native-audio": {
     "deprecation_date": "2026-12-13",
+    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "gemini_native_audio": true,
     "input_cost_per_audio_token": 3e-06,
     "input_cost_per_token": 5e-07,
@@ -3822,6 +3849,7 @@
   },
   "gpt-3.5-turbo": {
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 5e-07,
     "litellm_provider": "openai",
     "max_input_tokens": 16385,
@@ -3838,6 +3866,7 @@
   },
   "gpt-3.5-turbo-0125": {
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 5e-07,
     "litellm_provider": "openai",
     "max_input_tokens": 16385,
@@ -3855,6 +3884,7 @@
   },
   "gpt-3.5-turbo-1106": {
     "deprecation_date": "2026-09-28",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 16385,
@@ -3872,6 +3902,7 @@
   },
   "gpt-3.5-turbo-16k": {
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 3e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 16385,
@@ -3885,6 +3916,7 @@
   },
   "gpt-3.5-turbo-instruct": {
     "deprecation_date": "2026-09-28",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.5e-06,
     "litellm_provider": "text-completion-openai",
     "max_input_tokens": 8192,
@@ -3906,6 +3938,7 @@
   },
   "gpt-4": {
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 3e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 8192,
@@ -3948,6 +3981,7 @@
   },
   "gpt-4-0613": {
     "deprecation_date": "2025-06-06",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 3e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 8192,
@@ -3964,6 +3998,7 @@
   },
   "gpt-4-1106-preview": {
     "deprecation_date": "2026-03-26",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 128000,
@@ -3980,6 +4015,7 @@
   },
   "gpt-4-turbo": {
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 128000,
@@ -3998,6 +4034,7 @@
   },
   "gpt-4-turbo-2024-04-09": {
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 128000,
@@ -4035,6 +4072,7 @@
     "cache_read_input_token_cost": 5e-07,
     "cache_read_input_token_cost_priority": 8.75e-07,
     "deprecation_date": "2027-01-14",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2e-06,
     "input_cost_per_token_batches": 1e-06,
     "input_cost_per_token_priority": 3.5e-06,
@@ -4074,6 +4112,7 @@
   "gpt-4.1-2025-04-14": {
     "cache_read_input_token_cost": 5e-07,
     "deprecation_date": "2027-01-14",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2e-06,
     "input_cost_per_token_batches": 1e-06,
     "litellm_provider": "openai",
@@ -4112,6 +4151,7 @@
     "cache_read_input_token_cost": 1e-07,
     "cache_read_input_token_cost_priority": 1.75e-07,
     "deprecation_date": "2027-01-14",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 4e-07,
     "input_cost_per_token_batches": 2e-07,
     "input_cost_per_token_priority": 7e-07,
@@ -4151,6 +4191,7 @@
   "gpt-4.1-mini-2025-04-14": {
     "cache_read_input_token_cost": 1e-07,
     "deprecation_date": "2027-01-14",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 4e-07,
     "input_cost_per_token_batches": 2e-07,
     "litellm_provider": "openai",
@@ -4189,6 +4230,7 @@
     "cache_read_input_token_cost": 2.5e-08,
     "cache_read_input_token_cost_priority": 5e-08,
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1e-07,
     "input_cost_per_token_batches": 5e-08,
     "input_cost_per_token_priority": 2e-07,
@@ -4227,6 +4269,7 @@
   "gpt-4.1-nano-2025-04-14": {
     "cache_read_input_token_cost": 2.5e-08,
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1e-07,
     "input_cost_per_token_batches": 5e-08,
     "litellm_provider": "openai",
@@ -4264,6 +4307,7 @@
     "cache_read_input_token_cost": 1.25e-06,
     "cache_read_input_token_cost_priority": 2.125e-06,
     "deprecation_date": "2027-01-14",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-06,
     "input_cost_per_token_batches": 1.25e-06,
     "input_cost_per_token_priority": 4.25e-06,
@@ -4288,6 +4332,7 @@
   },
   "gpt-4o-2024-05-13": {
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 5e-06,
     "input_cost_per_token_batches": 2.5e-06,
     "input_cost_per_token_priority": 8.75e-06,
@@ -4312,6 +4357,7 @@
   "gpt-4o-2024-08-06": {
     "cache_read_input_token_cost": 1.25e-06,
     "deprecation_date": "2027-01-14",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-06,
     "input_cost_per_token_batches": 1.25e-06,
     "litellm_provider": "openai",
@@ -4335,6 +4381,7 @@
   "gpt-4o-2024-11-20": {
     "cache_read_input_token_cost": 1.25e-06,
     "deprecation_date": "2027-01-14",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-06,
     "input_cost_per_token_batches": 1.25e-06,
     "litellm_provider": "openai",
@@ -4375,6 +4422,7 @@
   },
   "gpt-4o-audio-preview-2024-12-17": {
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 4e-05,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -4394,6 +4442,7 @@
   },
   "gpt-4o-audio-preview-2025-06-03": {
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 4e-05,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -4415,6 +4464,7 @@
     "cache_read_input_token_cost": 7.5e-08,
     "cache_read_input_token_cost_priority": 1.25e-07,
     "deprecation_date": "2027-01-14",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.5e-07,
     "input_cost_per_token_batches": 7.5e-08,
     "input_cost_per_token_priority": 2.5e-07,
@@ -4440,6 +4490,7 @@
   "gpt-4o-mini-2024-07-18": {
     "cache_read_input_token_cost": 7.5e-08,
     "deprecation_date": "2027-01-14",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.5e-07,
     "input_cost_per_token_batches": 7.5e-08,
     "litellm_provider": "openai",
@@ -4485,6 +4536,7 @@
   },
   "gpt-4o-mini-audio-preview-2024-12-17": {
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 1.5e-07,
     "litellm_provider": "openai",
@@ -4525,6 +4577,7 @@
     "cache_creation_input_audio_token_cost": 3e-07,
     "cache_read_input_token_cost": 3e-07,
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -4570,6 +4623,7 @@
   "gpt-4o-mini-search-preview-2025-03-11": {
     "cache_read_input_token_cost": 7.5e-08,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.5e-07,
     "input_cost_per_token_batches": 7.5e-08,
     "litellm_provider": "openai",
@@ -4593,6 +4647,7 @@
   },
   "gpt-4o-mini-transcribe": {
     "deprecation_date": "2027-02-26",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1.25e-06,
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
@@ -4608,6 +4663,7 @@
   },
   "gpt-4o-mini-transcribe-2025-03-20": {
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1.25e-06,
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
@@ -4623,6 +4679,7 @@
   },
   "gpt-4o-mini-transcribe-2025-12-15": {
     "deprecation_date": "2027-02-26",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1.25e-06,
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
@@ -4638,6 +4695,7 @@
   },
   "gpt-4o-mini-tts": {
     "deprecation_date": "2027-01-06",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
     "mode": "audio_speech",
@@ -4659,6 +4717,7 @@
   },
   "gpt-4o-mini-tts-2025-03-20": {
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
     "mode": "audio_speech",
@@ -4680,6 +4739,7 @@
   },
   "gpt-4o-mini-tts-2025-12-15": {
     "deprecation_date": "2027-01-06",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
     "mode": "audio_speech",
@@ -4785,6 +4845,7 @@
   "gpt-4o-search-preview-2025-03-11": {
     "cache_read_input_token_cost": 1.25e-06,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-06,
     "input_cost_per_token_batches": 1.25e-06,
     "litellm_provider": "openai",
@@ -4808,6 +4869,7 @@
   },
   "gpt-4o-transcribe": {
     "deprecation_date": "2027-02-26",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 2.5e-06,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -4823,6 +4885,7 @@
   },
   "gpt-4o-transcribe-diarize": {
     "deprecation_date": "2027-02-26",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 2.5e-06,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -4841,6 +4904,7 @@
     "cache_read_input_token_cost_flex": 6.25e-08,
     "cache_read_input_token_cost_priority": 2.5e-07,
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_flex": 6.25e-07,
     "input_cost_per_token_priority": 2.5e-06,
@@ -4893,6 +4957,7 @@
     "cache_read_input_token_cost_flex": 6.25e-08,
     "cache_read_input_token_cost_priority": 2.5e-07,
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_flex": 6.25e-07,
     "input_cost_per_token_priority": 2.5e-06,
@@ -4943,6 +5008,7 @@
   "gpt-5-chat": {
     "cache_read_input_token_cost": 1.25e-07,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 128000,
@@ -4980,6 +5046,7 @@
   "gpt-5-chat-latest": {
     "cache_read_input_token_cost": 1.25e-07,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 128000,
@@ -5018,6 +5085,7 @@
   "gpt-5-codex": {
     "cache_read_input_token_cost": 1.25e-07,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 272000,
@@ -5057,6 +5125,7 @@
     "cache_read_input_token_cost_flex": 1.25e-08,
     "cache_read_input_token_cost_priority": 4.5e-08,
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-07,
     "input_cost_per_token_flex": 1.25e-07,
     "input_cost_per_token_priority": 4.5e-07,
@@ -5109,6 +5178,7 @@
     "cache_read_input_token_cost_flex": 1.25e-08,
     "cache_read_input_token_cost_priority": 4.5e-08,
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-07,
     "input_cost_per_token_flex": 1.25e-07,
     "input_cost_per_token_priority": 4.5e-07,
@@ -5160,6 +5230,7 @@
     "cache_read_input_token_cost": 5e-09,
     "cache_read_input_token_cost_flex": 2.5e-09,
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 5e-08,
     "input_cost_per_token_flex": 2.5e-08,
     "input_cost_per_token_priority": 2.5e-06,
@@ -5210,6 +5281,7 @@
     "cache_read_input_token_cost": 5e-09,
     "cache_read_input_token_cost_flex": 2.5e-09,
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 5e-08,
     "input_cost_per_token_flex": 2.5e-08,
     "litellm_provider": "openai",
@@ -5257,6 +5329,7 @@
   },
   "gpt-5-pro": {
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.5e-05,
     "input_cost_per_token_batches": 7.5e-06,
     "litellm_provider": "openai",
@@ -5303,6 +5376,7 @@
   },
   "gpt-5-pro-2025-10-06": {
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.5e-05,
     "input_cost_per_token_batches": 7.5e-06,
     "litellm_provider": "openai",
@@ -5397,6 +5471,7 @@
     "cache_read_input_token_cost_priority": 2.5e-07,
     "default_reasoning_effort": "none",
     "deprecation_date": "2027-04-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_priority": 2.5e-06,
     "litellm_provider": "openai",
@@ -5447,6 +5522,7 @@
     "cache_read_input_token_cost_priority": 2.5e-07,
     "default_reasoning_effort": "none",
     "deprecation_date": "2027-04-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_priority": 2.5e-06,
     "litellm_provider": "openai",
@@ -5497,6 +5573,7 @@
     "cache_read_input_token_cost_priority": 2.5e-07,
     "default_reasoning_effort": "none",
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_priority": 2.5e-06,
     "litellm_provider": "openai",
@@ -5539,6 +5616,7 @@
     "cache_read_input_token_cost": 1.25e-07,
     "cache_read_input_token_cost_priority": 2.5e-07,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_priority": 2.5e-06,
     "litellm_provider": "openai",
@@ -5578,6 +5656,7 @@
   "gpt-5.1-codex-max": {
     "cache_read_input_token_cost": 1.25e-07,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 272000,
@@ -5616,6 +5695,7 @@
     "cache_read_input_token_cost": 2.5e-08,
     "cache_read_input_token_cost_priority": 4.5e-08,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2.5e-07,
     "input_cost_per_token_priority": 4.5e-07,
     "litellm_provider": "openai",
@@ -5756,6 +5836,7 @@
     "cache_read_input_token_cost": 1.75e-07,
     "cache_read_input_token_cost_priority": 3.5e-07,
     "deprecation_date": "2026-08-10",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.75e-06,
     "input_cost_per_token_priority": 3.5e-06,
     "litellm_provider": "openai",
@@ -5797,6 +5878,7 @@
     "cache_read_input_token_cost": 1.75e-07,
     "cache_read_input_token_cost_priority": 3.5e-07,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.75e-06,
     "input_cost_per_token_priority": 3.5e-06,
     "litellm_provider": "openai",
@@ -5921,6 +6003,7 @@
     "cache_read_input_token_cost": 1.75e-07,
     "cache_read_input_token_cost_priority": 3.5e-07,
     "deprecation_date": "2026-08-10",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.75e-06,
     "input_cost_per_token_priority": 3.5e-06,
     "litellm_provider": "openai",
@@ -5962,6 +6045,7 @@
     "cache_read_input_token_cost": 1.75e-07,
     "cache_read_input_token_cost_priority": 3.5e-07,
     "deprecation_date": "2027-04-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.75e-06,
     "input_cost_per_token_priority": 3.5e-06,
     "litellm_provider": "openai",
@@ -6010,6 +6094,7 @@
     "cache_read_input_token_cost": 1.75e-07,
     "cache_read_input_token_cost_priority": 3.5e-07,
     "deprecation_date": "2027-04-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.75e-06,
     "input_cost_per_token_priority": 3.5e-06,
     "litellm_provider": "openai",
@@ -6292,6 +6377,7 @@
     "cache_read_input_token_cost_flex": 1e-08,
     "default_reasoning_effort": "none",
     "deprecation_date": "2027-04-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2e-07,
     "input_cost_per_token_batches": 1e-07,
     "input_cost_per_token_flex": 1e-07,
@@ -6347,6 +6433,7 @@
     "cache_read_input_token_cost_flex": 1e-08,
     "default_reasoning_effort": "none",
     "deprecation_date": "2027-04-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2e-07,
     "input_cost_per_token_batches": 1e-07,
     "input_cost_per_token_flex": 1e-07,
@@ -7678,6 +7765,7 @@
   },
   "gpt-audio": {
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 3.2e-05,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -7751,6 +7839,7 @@
   },
   "gpt-audio-2025-08-28": {
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 3.2e-05,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -7790,6 +7879,7 @@
   },
   "gpt-audio-mini": {
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -7829,6 +7919,7 @@
   },
   "gpt-audio-mini-2025-10-06": {
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -7868,6 +7959,7 @@
   },
   "gpt-audio-mini-2025-12-15": {
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -7984,6 +8076,7 @@
   "gpt-image-1": {
     "cache_read_input_token_cost": 1.25e-06,
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_image_token": 1e-05,
     "input_cost_per_token": 5e-06,
     "litellm_provider": "openai",
@@ -7999,6 +8092,7 @@
   "gpt-image-1-mini": {
     "cache_read_input_token_cost": 2e-07,
     "deprecation_date": "2026-12-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_image_token": 2.5e-06,
     "input_cost_per_token": 2e-06,
     "litellm_provider": "openai",
@@ -8014,6 +8108,7 @@
   "gpt-image-1.5": {
     "cache_read_input_token_cost": 1.25e-06,
     "deprecation_date": "2026-12-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_image_token": 8e-06,
     "input_cost_per_token": 5e-06,
     "litellm_provider": "openai",
@@ -8031,6 +8126,7 @@
   "gpt-image-1.5-2025-12-16": {
     "cache_read_input_token_cost": 1.25e-06,
     "deprecation_date": "2026-12-01",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_image_token": 8e-06,
     "input_cost_per_token": 5e-06,
     "litellm_provider": "openai",
@@ -8177,6 +8273,7 @@
     "cache_creation_input_audio_token_cost": 4e-07,
     "cache_read_input_token_cost": 4e-07,
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 3.2e-05,
     "input_cost_per_image": 5e-06,
     "input_cost_per_token": 4e-06,
@@ -8357,6 +8454,7 @@
     "cache_creation_input_audio_token_cost": 4e-07,
     "cache_read_input_token_cost": 4e-07,
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 3.2e-05,
     "input_cost_per_image": 5e-06,
     "input_cost_per_token": 4e-06,
@@ -8392,6 +8490,7 @@
     "cache_creation_input_audio_token_cost": 3e-07,
     "cache_read_input_audio_token_cost": 3e-07,
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -8462,6 +8561,7 @@
     "cache_read_input_audio_token_cost": 3e-07,
     "cache_read_input_token_cost": 6e-08,
     "deprecation_date": "2027-01-20",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_image": 8e-07,
     "input_cost_per_token": 6e-07,
@@ -8646,6 +8746,7 @@
   "o1-2024-12-17": {
     "cache_read_input_token_cost": 7.5e-06,
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.5e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
@@ -8667,6 +8768,7 @@
   },
   "o1-pro": {
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 0.00015,
     "input_cost_per_token_batches": 7.5e-05,
     "litellm_provider": "openai",
@@ -8702,6 +8804,7 @@
   },
   "o1-pro-2025-03-19": {
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 0.00015,
     "input_cost_per_token_batches": 7.5e-05,
     "litellm_provider": "openai",
@@ -8786,6 +8889,7 @@
   "o3-2025-04-16": {
     "cache_read_input_token_cost": 5e-07,
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
@@ -8828,6 +8932,7 @@
   "o3-deep-research": {
     "cache_read_input_token_cost": 2.5e-06,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1e-05,
     "input_cost_per_token_batches": 5e-06,
     "litellm_provider": "openai",
@@ -8866,6 +8971,7 @@
   "o3-deep-research-2025-06-26": {
     "cache_read_input_token_cost": 2.5e-06,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1e-05,
     "input_cost_per_token_batches": 5e-06,
     "litellm_provider": "openai",
@@ -8904,6 +9010,7 @@
   "o3-mini": {
     "cache_read_input_token_cost": 5.5e-07,
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.1e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
@@ -8924,6 +9031,7 @@
   "o3-mini-2025-01-31": {
     "cache_read_input_token_cost": 5.5e-07,
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.1e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
@@ -8943,6 +9051,7 @@
   },
   "o3-pro": {
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2e-05,
     "input_cost_per_token_batches": 1e-05,
     "litellm_provider": "openai",
@@ -8984,6 +9093,7 @@
   },
   "o3-pro-2025-06-10": {
     "deprecation_date": "2026-12-11",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2e-05,
     "input_cost_per_token_batches": 1e-05,
     "litellm_provider": "openai",
@@ -9028,6 +9138,7 @@
     "cache_read_input_token_cost_flex": 1.375e-07,
     "cache_read_input_token_cost_priority": 5e-07,
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.1e-06,
     "input_cost_per_token_flex": 5.5e-07,
     "input_cost_per_token_priority": 2e-06,
@@ -9054,6 +9165,7 @@
   "o4-mini-2025-04-16": {
     "cache_read_input_token_cost": 2.75e-07,
     "deprecation_date": "2026-10-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 1.1e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
@@ -9076,6 +9188,7 @@
   "o4-mini-deep-research": {
     "cache_read_input_token_cost": 5e-07,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2e-06,
     "input_cost_per_token_batches": 1e-06,
     "litellm_provider": "openai",
@@ -9114,6 +9227,7 @@
   "o4-mini-deep-research-2025-06-26": {
     "cache_read_input_token_cost": 5e-07,
     "deprecation_date": "2026-07-23",
+    "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 2e-06,
     "input_cost_per_token_batches": 1e-06,
     "litellm_provider": "openai",
